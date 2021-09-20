@@ -115,9 +115,34 @@
             <a href="#">Senior IT Support Enineer</a> &bull;
             <a href="#">ICT In Country Software Tester</a>
           </div>
-          <p>Follow the link to learn more about this <a rel="nofollow" href="https://www.linkedin.com/in/ahmed-bin-shehab-86285560/" class="color1">Linkdin</a>.  </p>
+         <!--<p>Follow the link to learn more about this <a rel="nofollow" href="https://www.linkedin.com/in/ahmed-bin-shehab-86285560/" class="color1">Linkdin</a>.  </p>
           <p>You can find <a rel="nofollow" href="http://www.templatemonster.com/category/personal-pages/" class="color1">personal pages themes</a> in the same name category at TemplateMonster.com.</p>
-          Lorem ipsum dolor sit tetur dipiscing elit. In mollis erat mattis neque facilisis, situltries wertolio dasererat rutrum. Lorem ipsum dolor sit tetur dipiscing elit.  <br>
+          Lorem ipsum dolor sit tetur dipiscing elit. In mollis erat mattis neque facilisis, situltries wertolio dasererat rutrum. Lorem ipsum dolor sit tetur dipiscing elit.  <br> 
+         -->
+         <form>
+          <fieldset style="width:20%; background-color:#e6ffe6;">
+              <legend>Count visitor</legend>
+              <%
+                  Integer hitsCount =
+                  (Integer)application.getAttribute("hitCounter");
+                  if( hitsCount ==null || hitsCount == 0 )
+                  {
+                      /* First visit */
+                      out.println("Welcome to my website!!");
+                      hitsCount = 1;
+                  }
+                  else
+                  {
+                      /* return visit */
+                      out.println("Welcome to my website!!");
+                      hitsCount += 1;
+                  }
+                  application.setAttribute("hitCounter", hitsCount);
+              %>
+              <p>You are visitor number: <%= hitsCount%></p>
+          </fieldset>
+      </form>
+      
           <a href="#" class="btn">Download Resume</a>
         </div>
       </div>
