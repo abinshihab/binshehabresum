@@ -81,18 +81,19 @@
       </div>
     </div>
   </div>
- <div id="camera_wrap">
+  <div id="camera_wrap">
     <div data-src="images/slide-1.jpg">
       <div class="caption fadeIn">Your Photographer <span class="bull"></span> Coder  <span class="bull"></span> Designer</div>
     </div>
- <div data-src="images/slide-2.jpg">
+    <div data-src="images/slide-2.jpg">
       <div class="caption fadeIn">Impressive Designs, Suitable for Cool Projects</div>
     </div>
     <div data-src="images/slide-3.jpg">
       <div class="caption fadeIn">Designs that Work for Your Benefits</div>
     </div>
-  </div> 
-</header> 
+  </div>
+  
+</header>
 <!--=====================
           Content
 ======================-->
@@ -104,7 +105,7 @@
         <h2>About Me
           <span>THE BRIEF INTRODUCTION OF MYSELF</span>
         </h2>
-        <p class="offset__1">Looking for challenging position where I advanced in my career and add value to my business environment .My fututre plan is to be Subject matter expert in information secuirty and Cloud solution architecture.</p>
+        <p class="offset__1">Looking for challenging position where I advanced in my career and add value to my business environment .My fututre plan is to be Subject matter expert in information secuirty and solution architecture.</p>
         <img src="images/personal_photo.jpg" alt="" class="fleft">
         <div class="extra_wrapper">
           <div class="text-1">
@@ -119,30 +120,8 @@
           <p>You can find <a rel="nofollow" href="http://www.templatemonster.com/category/personal-pages/" class="color1">personal pages themes</a> in the same name category at TemplateMonster.com.</p>
           Lorem ipsum dolor sit tetur dipiscing elit. In mollis erat mattis neque facilisis, situltries wertolio dasererat rutrum. Lorem ipsum dolor sit tetur dipiscing elit.  <br> 
          -->
-         <form>
-          <fieldset style="width:20%; background-color:#e6ffe6;">
-              <legend>Count visitor</legend>
-              <%
-                  Integer hitsCount =
-                  (Integer)application.getAttribute("hitCounter");
-                  if( hitsCount ==null || hitsCount == 0 )
-                  {
-                      /* First visit */
-                      out.println("Welcome to my website!!");
-                      hitsCount = 1;
-                  }
-                  else
-                  {
-                      /* return visit */
-                      out.println("Welcome to my website!!");
-                      hitsCount += 1;
-                  }
-                  application.setAttribute("hitCounter", hitsCount);
-              %>
-              <p>You are visitor number: <%= hitsCount%></p>
-          </fieldset>
-      </form>
-      
+        
+
           <a href="#" class="btn">Download Resume</a>
         </div>
       </div>
