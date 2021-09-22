@@ -122,10 +122,10 @@
                     rotation: this.$.data('rotation'),
 
                     // Hooks
-                    draw: null, // function () {}
-                    change: null, // function (value) {}
-                    cancel: null, // function () {}
-                    release: null, // function (value) {}
+                    draw: 100, // function () {}
+                    change: 100, // function (value) {}
+                    cancel: 100, // function () {}
+                    release: 100, // function (value) {}
 
                     // Output formatting, allows to add unit: %, ms ...
                     format: function(v) {
